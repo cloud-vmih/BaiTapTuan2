@@ -1,0 +1,157 @@
+/* Reset cơ bản để style consistent hơn */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Body */
+body { 
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    margin: 2em auto;
+    width: 500px;
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.5;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+p {
+ color: #00006a;
+ }
+/* Headings */
+h1 {     
+    font-size: 1.8rem;
+    color: #1527a1;
+    margin-bottom: .5em;  
+    text-align: center;
+}
+h2 {     
+    font-size: 1.25rem;
+    color: #1080c5;
+    margin-bottom: .5em;    
+}
+
+/* Label + Input */
+label {
+    display: inline-block;
+    width: 7em;
+    margin-bottom: 0.5em;
+    padding-top: .3em;
+    font-weight: bold;
+    color: #00006a;
+}
+/* Hover + animation cho input */
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 16em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.7em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.25s ease; /* smooth hover */
+}
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="date"]:hover {
+    border-color: #1080c5;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(16,128,197,0.2);
+}
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="date"]:focus {
+    border-color: #1080c5;
+    outline: none;
+    box-shadow: 0 0 6px rgba(16,128,197,0.3);
+    transform: translateY(-2px);
+}
+input[type='checkbox'] {
+	margin-bottom: 1em;
+}
+
+/* Nút bấm đẹp + animation */
+button, input[type="submit"] {
+    background: #1080c5;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    width: 7em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.8em;
+    display: inline-block;
+}
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0d6ea9, #1080c5);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+button:active, input[type="submit"]:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Table hover animation */
+tr {
+    transition: background 0.3s ease;
+}
+tr:hover {
+    background: #e9f5ff;
+}
+
+
+input[type="radio"]{
+	margin-right: 0.4em;
+	margin-left: 0.5em;
+}
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+    color: #666;
+}
+br {
+    clear: both;
+}
+
+/* Classes tiện ích */
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;   
+    margin-top: 1em;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.6em;
+}
+th {
+    background: #1080c5;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+.right {
+    text-align: right;
+}
