@@ -21,12 +21,14 @@ body {
 }
 p {
  color: #00006a;
+ padding-top: .8em;
+ padding-bottom: .8em;
  }
 /* Headings */
 h1 {     
     font-size: 1.8rem;
     color: #1527a1;
-    margin-bottom: .5em;  
+    margin-bottom: .8em;  
     text-align: center;
 }
 h2 {     
