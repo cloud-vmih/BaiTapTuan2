@@ -8,6 +8,7 @@
     <body>
     	<img src="images/murachlogo.jpg" alt="Murach Logo" style="margin-left:170px">
         <form action="survey" method="post">
+        	<input type="hidden" name="action" value="add">
             <h1><img src="images/cloud.png" alt="Cloud" style="width: 1.2em">
             Survey of Cloud
             <img src="images/cloud.png" alt="Cloud" style="width: 1.2em">
@@ -22,17 +23,17 @@
             <label>Email</label>
             <input type="email" name="email" required><br>
             <label>Date of Birth</label>
-            <input type="date" name="Date of Birth">
+            <input type="date" name="Date of Birth" required>
 
             <h2>How did you hear about us?</h2>
             <p><input type=radio name="heardFrom" value="Search Engine" checked>Search engine
                <input type=radio name="heardFrom" value="Friend">Word of mouth
-               <input type=radio name="Social Media" value="social">Social Media
+               <input type=radio name="heardFrom" value="social">Social Media
                <input type=radio name="heardFrom" value="Other">Other</p>
 
             <h2>Would you like to receive announcements about new CDs and special offers?</h2>
-            <p><input type="checkbox" name="wantsUpdates" checked>YES, I'd like that.<br>
-            <input type="checkbox" name="emailOK" checked>YES, Please send me email announcements.</p>
+            <p><input type="checkbox" name="wantsUpdates" value = "Yes" checked>YES, I'd like that.<br>
+            <input type="checkbox" name="emailOK" value = "Yes">YES, Please send me email announcements.</p>
 
             <p>Please contact me by:
                 <select name="contactVia">

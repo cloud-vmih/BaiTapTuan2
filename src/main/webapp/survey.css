@@ -38,7 +38,7 @@ h2 {
 /* Label + Input */
 label {
     display: inline-block;
-    width: 7em;
+    width: 9em;
     margin-bottom: 0.5em;
     padding-top: .3em;
     font-weight: bold;
@@ -73,7 +73,6 @@ input[type='checkbox'] {
 	margin-bottom: 1em;
 }
 
-/* Nút bấm đẹp + animation */
 button, input[type="submit"] {
     background: #1080c5;
     color: #fff;
