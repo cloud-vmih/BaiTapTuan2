@@ -1,4 +1,5 @@
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html>
 <head>
@@ -30,13 +31,33 @@
 	<span>${user.heardFrom}</span><br>
 	
 	<label>Wants Updates:</label>
-	<span>${user.wantsUpdates[0]}</span><br>
-	
+	<span>
+		<c:choose>
+        	<c:when test="${not empty user.wantsUpdates}">
+            	Yes
+        	</c:when>
+        	<c:otherwise>
+            	No
+       		</c:otherwise>
+    	</c:choose>
+	</span><br>
+		
 	<label>Email OK:</label>
-	<span>${user.emailOk[0]}</span><br>
+	<span>
+    	<c:choose>
+        	<c:when test="${not empty user.emailOk}">
+            	Yes
+        	</c:when>
+        	<c:otherwise>
+            	No
+       		</c:otherwise>
+    	</c:choose>
+	</span><br>
 	
-	<label>Contact Via:</label>
-	<span>${user.contactVia[0]}</span><br>
+	<c:if test = "${not empty user.wantsUpdates}">
+		<label>Contact Via:</label>
+		<span>${user.contactVia[0]}</span><br>
+	</c:if>
    		
 <p>To enter another email address, click on the Back 
     button in your browser or the Return button shown 
